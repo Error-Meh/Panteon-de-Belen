@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container{
+    position: fixed;
+    top: 0;
+    left: -250px; /* Oculta el menú y el botón al inicio */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    transition: left 0.3s; /* Animación de deslizamiento */
+    padding-top: 60px;
+}
+
+.menu-btn {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 15px;
+    color: white;
+    background-color: #ff8c00;
+    border: none;
+    position: absolute;
+    top: 20px;
+    left: 250px; /* Ajusta la posición del botón dentro del menú */
+    z-index: 1000;
+}
+
+/* Estilos del menú lateral */
+.sidebar {
+    width: 100%;
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+/* Clase para mostrar el menú y el botón juntos */
+.menu-container.show {
+    left: 0; /* Mueve el menú y el botón hacia la derecha */
+}
+
+.Boton{
+    color: white;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+main{
+    width: 100%;
+}
+
+.Princip, .Historias {
+    background-color: #67467d;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    max-width: 900px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+main h1 {
+    font-size: 35px;
+    font-family: 'Creepster', cursive;
+}
+
+.Parrafo1, .Historias p {
+    color: #ff8c00;
+    margin: auto;
+    text-align: center;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.TituloSec {
+    margin: auto;
+    max-width: 400px;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 0 15px rgba(255, 140, 0, 0.7);
+    background-color: #ffd700;
+}
+
+.Historias h2 {
+    font-size: 35px;
+    font-family: 'Creepster', cursive;
+    margin-bottom: 15px;
+}
